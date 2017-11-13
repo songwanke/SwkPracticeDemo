@@ -47,7 +47,7 @@ pom作为项目对象模型。通过xml表示maven项目，使用pom.xml来实�
 
 **plugin配置：** 
 ```
-<plugin> 
+       <plugin> 
         <groupId>org.apache.maven.plugins</groupId> 
         <artifactId>maven-jar-plugin</artifactId> 
         <version>2.0</version> 
@@ -58,14 +58,34 @@ pom作为项目对象模型。通过xml表示maven项目，使用pom.xml来实�
         </configuration> 
         <dependencies>...</dependencies> 
         <executions>...</executions> 
-      </plugin>
+     </plugin>
 ```
 
 **extensions:** true or false, 决定是否要load这个plugin的extensions，默认为true。  
 **inherited:** 是否让子pom继承，ture or false 默认为true。  
 **configuration:** 通常用于私有不开源的plugin,不能够详细了解plugin的内部工作原理，但使plugin满足的properties。  
 **dependencies:** 与pom基础的dependencies的结构和功能都相同，只是plugin的dependencies用于plugin,而pom的denpendencies用于项目本身。在plugin的dependencies主要用于改变plugin原来的dependencies，例如排除一些用不到的dependency或者修改dependency的版本等。  
+**executions:** plugin也有很多个目标，每个目标具有不同的配置，executions就是设定plugin的目标。  
 
+```
+           <execution> 
+            <id>echodir</id> 
+            <goals> 
+              <goal>run</goal> 
+            </goals> 
+            <phase>verify</phase> 
+            <inherited>false</inherited> 
+            <configuration> 
+              <tasks> 
+                <echo>Build Dir: ${project.build.directory}</echo> 
+              </tasks> 
+            </configuration> 
+           </execution> 
+```  
+**id:** 标识符  
+**goals:** 里面列出一系列的goals元素，例如上面的run goal。  
+**phase:** 声明goals执行的时期，例如：verify。  
+**inherited:** 是否传递execution到子pom里。  
+**configuration:** 设置execution下列表的goals的设置，而不是plugin所有的goals的设置。  
 
-未完待续。。。。
-参考地址：http://www.cnblogs.com/zhangjianbin/p/7169232.html
+参考：http://www.cnblogs.com/zhangjianbin/p/7169232.html
