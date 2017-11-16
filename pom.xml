@@ -13,6 +13,7 @@
         <module>practice-service-demo-service</module>
         <module>practice-service-demo-domain</module>
         <module>practice-service-demo-dao</module>
+        <module>practice-service-demo-common</module>
     </modules>
 
     <properties>

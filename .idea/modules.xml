@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SwkPracticeDemo.iml" filepath="$PROJECT_DIR$/SwkPracticeDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-service-demo-common/practice-service-demo-common.iml" filepath="$PROJECT_DIR$/practice-service-demo-common/practice-service-demo-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/practice-service-demo-dao/practice-service-demo-dao.iml" filepath="$PROJECT_DIR$/practice-service-demo-dao/practice-service-demo-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/practice-service-demo-domain/practice-service-demo-domain.iml" filepath="$PROJECT_DIR$/practice-service-demo-domain/practice-service-demo-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/practice-service-demo-service/practice-service-demo-serevice.iml" filepath="$PROJECT_DIR$/practice-service-demo-service/practice-service-demo-serevice.iml" />
