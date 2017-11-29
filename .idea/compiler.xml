@@ -22,6 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="practice-service-demo-common" />
         <module name="practice-service-demo-dao" />
         <module name="practice-service-demo-domain" />
         <module name="practice-service-demo-service" />
@@ -29,10 +30,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="practice-service-demo-common" target="1.5" />
       <module name="practice-service-demo-dao" target="1.5" />
       <module name="practice-service-demo-domain" target="1.5" />
       <module name="practice-service-demo-service" target="1.5" />
-      <module name="practice-service-demo-web" target="1.5" />
+      <module name="practice-service-demo-web" target="1.6" />
       <module name="SwkPracticeDemo" target="1.5" />
     </bytecodeTargetLevel>
   </component>

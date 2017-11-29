@@ -1,7 +1,7 @@
 package com.swk.web;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 
 /**
  * @author songwanke
@@ -11,11 +11,11 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 public class PracticeApplication {
     public static void main(String[] args) {
 //        第一种方式
-        new SpringApplicationBuilder()
-                .sources(PracticeApplication.class)
-                .run(args);
+//        new SpringApplicationBuilder()
+//                .sources(PracticeApplication.class)
+//                .run(args);
 //        第二种方式
-//        SpringApplication.run(PracticeApplication.class, args);
+        SpringApplication.run(PracticeApplication.class, args);
 //        第三种方式
 //        SpringApplication application = new SpringApplication(PracticeApplication.class);
 //        application.run(args);
