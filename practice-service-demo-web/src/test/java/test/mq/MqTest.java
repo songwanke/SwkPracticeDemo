@@ -35,7 +35,7 @@ public class MqTest {
         map.put("sellerId",1128L);
         map.put("shopId",11281L);
         messageInfo.setMessageObj(map);
-
+//        System.out.println("++++++++++++++"+new Gson().toJson(map));
         kafkaTemplate.send(messageInfo.getTopic(),messageInfo);
 
     }
