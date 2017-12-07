@@ -1,0 +1,9 @@
+1:用FileWriter这个连接串流来写入文本文件
+2:将FileWriter链接到BufferedWriter可以提升效率
+3:File对象代表文件的路径而不是文件内容
+4:你可以用File对象来创建，浏览和删除目录
+5:用到String文件名的串流大部分都可以用File对象来代替String
+6:用FileReader来读取文本文件
+7:将FileReader链接到BufferReader可以提升效率
+8:通常我们会使用特殊的字符来分隔文本数据中的不同元素
+9:使用split()方法可以把String拆开，其中的分割字符不会被当做数据来看待
